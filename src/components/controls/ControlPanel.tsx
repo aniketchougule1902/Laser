@@ -18,8 +18,6 @@ export const ControlPanel = ({
   setLaserOn,
   playSound
 }: ControlPanelProps) => {
-  const colorInfo = wavelengthToRGB(params.wavelength);
-
   const updateParam = <K extends keyof SimulationParams>(key: K, value: SimulationParams[K]) => {
     setParams(prev => ({
       ...prev,

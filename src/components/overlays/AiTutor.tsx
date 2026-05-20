@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import { HelpCircle, Sparkles, MessageSquare, ChevronRight } from 'lucide-react';
+import { Sparkles, MessageSquare, ChevronRight } from 'lucide-react';
 import type { SimulationParams } from '../../physics/diffraction';
 import { calculateGratingSpacing } from '../../physics/diffraction';
 
 interface AiTutorProps {
   params: SimulationParams;
-  laserOn: boolean;
   playSound: (type: 'laser' | 'click' | 'success') => void;
 }
 
-export const AiTutor = ({ params, laserOn, playSound }: AiTutorProps) => {
+export const AiTutor = ({ params, playSound }: AiTutorProps) => {
   const [response, setResponse] = useState<string>(
     "Hello! I am your AI Physics Lab Assistant. Turn on the laser source and select any of the topics below to explore the wave physics of diffraction gratings in real-time."
   );

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { BookOpen, HelpCircle, Variable, Cpu } from 'lucide-react';
-import { calculateGratingSpacing, wavelengthToRGB } from '../../physics/diffraction';
+import { BookOpen, Variable, Cpu } from 'lucide-react';
+import { calculateGratingSpacing } from '../../physics/diffraction';
 
 export const TheoryView = () => {
   const [calcWavelength, setCalcWavelength] = useState<number>(632.8);
@@ -66,7 +66,7 @@ export const TheoryView = () => {
               <div style={{ fontSize: '18px', fontFamily: 'var(--font-mono)', margin: '10px 0', textAlign: 'center', color: '#ffffff' }}>
                 N = 1 / d = 1 / (a + b)
               </div>
-              Grating element $d$ is calculated by taking the inverse of the line density. For example, a grating with 15,000 lines/inch has a line spacing $d = 2.54 \text{ cm} / 15000 = 1.693 \times 10^{-4} \text{ cm}$.
+              Grating element d is calculated by taking the inverse of the line density. For example, a grating with 15,000 lines/inch has a line spacing d = 2.54 cm / 15000 = 1.693 x 10^-4 cm.
             </div>
 
             <div style={{ background: 'rgba(0,0,0,0.15)', borderLeft: '3px solid var(--success)', padding: '12px', borderRadius: '4px' }}>

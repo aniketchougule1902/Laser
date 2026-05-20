@@ -88,7 +88,6 @@ function App() {
             
             <AiTutor 
               params={params}
-              laserOn={laserOn}
               playSound={playSound}
             />
           </section>
